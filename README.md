@@ -4,7 +4,7 @@ Um script em PHP com uma classe para o cálculo dos valores RGB/HSL/HSV das n co
 
 ### Algoritmo
 
-Para n cores intermediárias, com i variando de 1 à n, o valor de cada cor intermediária entre a e b, é dado pela equação:
+Para n cores intermediárias, com i variando de 1 a n, o valor de cada cor intermediária entre a e b, é dado pela equação de interpolação linear:
 
 V = a + (b - a) * i / (n + 1)
 
@@ -32,17 +32,23 @@ O espaço de cor hue/saturation/value, ou, matiz/saturação/valor, é um sistem
 
 ### Referências
 
+- *C++ - Numerics library - std::lerp*. C++ Reference: C++98, C++03, C++11, C++14, C++17, C++20. October 3, 2020. Disponível em: <https://en.cppreference.com/w/cpp/numeric/lerp>
+
 - FORD, A.; ROBERTS, A. *Colour Space Conversions*. August 11, 1998. Disponível em: <http://poynton.ca/PDFs/coloureq.pdf>
 
 - IBRAHEEM, N. A.; HASAN, M. M.; KHAN, R. Z.; MISHRA, P. K. *Understanding Color Models: A Review*. ARPN Journal of Science and Technology. vol. 2, no. 3, pp. 265-275. April 2012.
 
 - MALACARA, D. *Color Vision and Colorimetry: Theory and Applications, 2nd ed*. SPIE. Bellingham, Washington, USA, 2011.
 
+- OHTA, N.; ROBERTSON, A. R. *Colorimetry: Fundamentals and Applications*. John Wiley & Sons Ltd, 2005.
+
 - SCHANDA, J. *Colorimetry: Understanding the CIE System*. Wiley, 2007.
 
 - SHEVELL, S. K. *The Science of Color, Second Edition*. Optical Society of America. Elsevier, 2003.
 
 - SMITH, A. R. *Color Gamut Transform Pairs*. Technical Memo No 7, Computer Graphics Lab, New York Institute of Technology, Jul 1978, issued as tutorial notes at SIGGRAPHs 78-82. Disponível em: <http://alvyray.com/Papers/CG/color78.pdf>
+
+- Standard C++ Foundation. *ISO/IEC JTC1 SC22 WG21 N4860. Programming Languages - C++*. 2020-03-31. Disponível em: <https://isocpp.org/files/papers/N4860.pdf>
 
 - WALDMAN, N. *Math behind colorspace conversions, RGB-HSL*. May 8, 2013. Disponível em: <http://www.niwa.nu/2013/05/math-behind-colorspace-conversions-rgb-hsl/>
 
